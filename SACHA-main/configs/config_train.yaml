@@ -1,0 +1,24 @@
+num_episodes: 72000
+warmup_episodes: 50 
+num_rollout_threads: 4 
+max_episode_length: 128 
+buffer_size: 4096 
+upgrade_threshold: 0.8 
+save_interval: 10 
+steps_per_update: 64 
+batch_size: 64 
+lr_pi: 0.005 
+lr_q: 0.005 
+tau: 0.005 
+gamma: 0.90 
+alpha: 0.05 
+curriculum: false
+beta1: 0.9  # first parameter of Adam optimizer
+beta2: 0.999  # second parameter of Adam optimizer
+eps: 1e-8  # epsilon parameter of Adam optimizer
+weight_decay: 1e-5  # weight decay parameter of Adam optimizer
+input shape: 64
+output_shape: 10
+hidden_channels: 32
+num_heads: 4
+threshold: 16
